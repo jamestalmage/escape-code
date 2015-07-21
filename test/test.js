@@ -18,6 +18,13 @@ describe('escape-code', function() {
     );
   });
 
+  it('comparison via assert.equal', function() {
+    assert.equal(
+      new EscapeCode('\u001b[3m'),
+      '\u001b[3m'
+    );
+  });
+
   it('will handle use without `new` keyword', function() {
     assert.equal(
       escapeCode('\u001b[3m').valueOf(),
@@ -33,6 +40,7 @@ describe('escape-code', function() {
 
   it('extends string', function() {
     assert(new EscapeCode('\u001b[34m') instanceof String);
+    assert.strictEqual(new EscapeCode('\u001b[34m').constructor, EscapeCode);
   });
 
   it('JSON is the same', function() {

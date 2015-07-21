@@ -6,10 +6,13 @@ function EscapeCode(str) {
     return new EscapeCode(str);
   }
   String.call(this, str);
-  this._stringValue = str;
+  Object.defineProperty(this, '_stringValue', {
+    value: str
+  });
 }
 
 var ecp = EscapeCode.prototype = new String(); // jshint ignore:line
+ecp.constructor = EscapeCode;
 
 ecp.toString = ecp.valueOf = function() {
   return this._stringValue;
