@@ -1,6 +1,6 @@
 # escape-code 
 
-Ansi Escape Code as an object
+ANSI Escape Code as an object
 
 [![Build Status](https://travis-ci.org/jamestalmage/escape-code.svg?branch=master)](https://travis-ci.org/jamestalmage/escape-code)
 [![Coverage Status](https://coveralls.io/repos/jamestalmage/escape-code/badge.svg?branch=master&service=github)](https://coveralls.io/github/jamestalmage/escape-code?branch=master)

@@ -1,7 +1,7 @@
 {
   "name": "escape-code",
   "version": "0.0.1",
-  "description": "My ace module",
+  "description": "ANSI Escape Code as an object",
   "license": "MIT",
   "repository": "jamestalmage/escape-code",
   "author": {
@@ -23,9 +23,7 @@
   "files": [
     "index.js"
   ],
-  "keywords": [
-    ""
-  ],
+  "keywords": [ ],
   "dependencies": {},
   "devDependencies": {
     "codeclimate-test-reporter": "^0.1.0",
