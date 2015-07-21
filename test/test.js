@@ -32,7 +32,13 @@ describe('escape-code', function() {
   });
 
   it('extends string', function() {
-    assert(new EscapeCode('\u001b') instanceof String);
+    assert(new EscapeCode('\u001b[34m') instanceof String);
   });
 
+  it('JSON is the same', function() {
+    assert.strictEqual(
+      JSON.stringify('\u001b[34m'),
+      JSON.stringify('\u001b[34m')
+    );
+  });
 });
