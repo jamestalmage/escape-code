@@ -1,6 +1,6 @@
 {
   "name": "escape-code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ANSI Escape Code as an object",
   "license": "MIT",
   "repository": "jamestalmage/escape-code",
