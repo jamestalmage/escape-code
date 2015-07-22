@@ -23,8 +23,10 @@
   "files": [
     "index.js"
   ],
-  "keywords": [ ],
-  "dependencies": {},
+  "keywords": [],
+  "dependencies": {
+    "delegates": "^0.1.0"
+  },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.1.0",
     "coveralls": "^2.11.2",

@@ -24,9 +24,8 @@ var code = new EscapeCode('\u001b[32m');
 
 // this is the useful bit
 assert(code instanceof EscapeCode);
-
-// it extends String
-assert(code instanceof String);
+// or
+assert(code.isEscapeCode);    // boolean value === true
 
 // toString just returns what you put in.
 assert.equal(code.toString(), '\u001b[32m');
@@ -40,6 +39,25 @@ assert(/\u001b/.test(code));
 assert.equal(/\u001b/.exec(code)[0], '\u001b');
 
 ```
+
+Each instance has the following delegate methods that will be called on the
+underlying String.
+
+- charAt
+- charCodeAt
+- concat
+- indexOf
+- lastIndexOf
+- match
+- replace
+- search
+- slice
+- split
+- substr
+- substring
+- toLowerCase
+- toUpperCase
+- trim
 
 
 ## License
