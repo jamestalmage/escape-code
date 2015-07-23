@@ -25,7 +25,7 @@
   ],
   "keywords": [],
   "dependencies": {
-    "delegates": "^0.1.0"
+    "stringish": "0.0.1"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.1.0",
